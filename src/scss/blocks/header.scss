@@ -1,0 +1,48 @@
+.header {
+  right: 0;
+  padding-top: 80px;
+  
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 750px;
+    width: 100%;
+  }
+
+  &__shedule {
+    font-size: 14px;
+    span {
+      font-weight: 700;
+    }
+    &::before {
+      background-image: url('@img/icons/time.svg');
+    }
+  }
+
+  &__adress {
+    &::before {
+      background-image: url('@img/icons/marker.svg');
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    font-size: 20px;
+    font-weight: 700;
+
+    span {
+      color: rgb(23, 113, 241);
+    }
+  }
+}

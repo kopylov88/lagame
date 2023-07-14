@@ -1,0 +1,79 @@
+.service {
+  padding: 30px 0;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 360px;
+    width: 100%;
+    padding: 20px;
+    background-color: #303030;
+    border-radius: 10px;
+
+    &:hover {
+      &::before {
+        transform: rotate(5deg);
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $accent-color;
+      border-radius: 10px;
+      transition: .6s;
+    }
+  }
+
+  &__item-name {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: $accent-color;
+    line-height: 1.55;
+    font-weight: 700;
+  }
+
+  &__text {
+    max-width: 250px;
+  }
+
+  &__img {
+    position: absolute;
+    z-index: 10;
+    width: 150px;
+    object-fit: contain;
+    transform: rotate(45deg);
+
+  }
+
+  &__img--gamepad {
+    top: -40px;
+    right: -5px;
+  }
+
+  &__img--bottle {
+    top: -120px;
+    right: -20px;
+    transform: rotate(-45deg);
+  }
+
+  &__img--smoke {
+    top: -70px;
+    right: 0;
+    transform: rotate(0);
+  }
+}

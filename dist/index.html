@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA GAME BAR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap&_v=20230701124540" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230701124540">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <img src="img/header/logo.png" alt="logo">
+        <span class="logo__text"><span>LA</span> GAME BAR</span>
+      </a>
+      <div class="header__info">
+        <div class="header__phone phone">
+          <a href="tel:0734341216">073 434 12 16</a>
+          <a href="tel:0734341216">095 627 89 82</a>
+        </div>
+        <div class="header__shedule shedule"><span>ПН - НД</span> с 12:00 до 21:00</div>
+        <div class="header__adress adress">
+          <a href="https://goo.gl/maps/hXDTW1cyFkQvvnxu5" target="_blank">Киев, Большая Васильковская, 42Б</a>
+          <a href="https://goo.gl/maps/qrntzmqSRj3HD3n86" target="_blank">Киев, Пушкинская, 11</a>
+        </div>
+      </div>
+      <button class="menu-btn" aria-label="button menu">
+        <span></span>
+      </button>
+    </div>
+    <aside class="side-menu">
+      <button class="side-menu__close">
+        <img src="img/icons/close-icon.svg" alt="close icon">
+      </button>
+      <div class="side-menu__box">
+        <nav class="nav">
+          <ul class="side-menu__list">
+            <li class="side-menu__item">
+              <a href="#service" class="side-menu__link">Услуги</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#rooms" class="side-menu__link">Комнаты</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#promo" class="side-menu__link">Акции</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#games" class="side-menu__link">Игры</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#contacts" class="side-menu__link">Контакты</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#!" class="side-menu__link popup-btn" data-path="menu" aria-label="button popup menu">Наше меню</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="side-menu__info">
+          <a href="https://goo.gl/maps/hXDTW1cyFkQvvnxu5" target="_blank">Киев, Большая Васильковская, 42Б</a>
+          <a href="https://goo.gl/maps/qrntzmqSRj3HD3n86" target="_blank">Киев, Пушкинская, 11</a>
+          <a href="tel:0734341216">073 434 12 16</a>
+          <a href="tel:0734341216">095 627 89 82</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</header>
+    <main class="main">
+      <section class="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__title">Твой любимый игровой бар</h1>
+        <p class="hero__subtitle text-block">Почувствуй себя как дома! В наших комнатах все, что тебе нужно.</p>
+        <div class="hero__box">
+          <div class="hero__box-item">
+            <a class="btn hero__btn" href="#rooms">Забронировать</a>
+            <div class="hero__info info-block">
+              <p class="hero__info-text">
+                У нас большая коллекция игр, ты найдешь свою.
+              </p>
+            </div>
+          </div>
+          <div class="hero__box-item">
+            <div class="hero__info info-block hero__info--music">
+              <p class="hero__info-text">
+                Включай свой плейлист и наслаждайся.
+              </p>
+            </div>
+            <div class="hero__info info-block hero__info--food">
+              <p class="hero__info-text">
+                Заказывай себе еду прямо в комнату,
+                к нам можно со своим.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__img">
+        <img src="img/hero/1.jpg" alt="gamepad">
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="service" id="service">
+  <div class="container">
+    <h2 class="service__title title">Наши услуги</h2>
+    <div class="service__body">
+      <div class="service__item">
+        <div class="service__item-name">Игры</div>
+        <p class="service__text">
+          Все детство мы провели в подобных заведениях. Теперь мы собрали все самые лучшие игры для вас!
+        </p>
+        <img class="service__img service__img--gamepad" src="img/service/1.png" alt="gamepad">
+      </div>
+      <div class="service__item">
+        <div class="service__item-name">Бар</div>
+        <p class="service__text">
+          Имеются стандартные снеки, а также алкогольные и безалкогольные напитки.
+        </p>
+        <img class="service__img service__img--bottle" src="img/service/2.png" alt="bottle">
+        <button class="popup-btn popup-menu--circle" data-path="menu" aria-label=" button popup menu">Меню</button>
+      </div>
+      <div class="service__item">
+        <div class="service__item-name">Кальян</div>
+        <p class="service__text">
+          Наши станции точно не оставят тебя безразличным. Дым + любимая игра на PS5 = идеальный вечер!
+        </p>
+        <img class="service__img service__img--smoke" src="img/service/3.png" alt="smoke">
+      </div>
+    </div>
+  </div>
+</section>
+      <div class="rooms" id="rooms">
+  <div class="container">
+    <div class="rooms__tabs">
+      <div class="rooms__tabs-buttons">
+        <button class="rooms__tabs-btn active" data-tab="#tab-1">Большая Васильковская, 42Б</button>
+        <button class="rooms__tabs-btn" data-tab="#tab-2">Пушкинская, 11</button>
+      </div>
+      <div class="rooms__tabs-content-box active" id="tab-1">
+        <div class="rooms__tabs-content-item">
+          <div class="rooms__tabs-info">
+            <h3 class="rooms__tabs-title rooms__tabs-title--miami">MIAMI ROOM</h3>
+            <p class="text-block text-block--miami">Большой Party Room. Если у нас спросят о любимой комнате –
+              ответ будет очевиден! Отличный выбор для крупной компании.
+            </p>
+            <div class="rooms_tabs-reserve">
+              <button class="popup-btn popup-btn--miami btn" data-path="reserve" data-color="miami">Забронировать</button>
+              <div class="rooms__tabs-price">675
+                <span>грн/год</span>
+              </div>
+            </div>
+            <div class="info-block info-block--miami">до 15 чел.</div>
+          </div>
+          <div class="rooms__slider rooms__slider--miami">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/miami/1.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/miami/2.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/miami/3.jpg" alt="slider image">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div class="rooms__tabs-content-item">
+          <div class="rooms__tabs-info">
+            <h3 class="rooms__tabs-title rooms__tabs-title--red">RED ROOM</h3>
+            <p class="text-block text-block--red">Любиш красный неон?
+              Бери игристое или красное полусладкое и добро пожаловать! Let's Party!
+              Подойдет для маленькой компании.
+            </p>
+            <div class="rooms_tabs-reserve">
+              <button class="popup-btn popup-btn--red btn" data-path="reserve" data-color="red">Забронировать</button>
+              <div class="rooms__tabs-price">300
+                <span>грн/год</span>
+              </div>
+            </div>
+            <div class="info-block info-block--red">до 6 чел.</div>
+          </div>
+          <div class="rooms__slider rooms__slider--red">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/red/1.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/red/2.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/red/3.jpg" alt="slider image">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div class="rooms__tabs-content-item">
+          <div class="rooms__tabs-info">
+            <h3 class="rooms__tabs-title rooms__tabs-title--purple">PURPLE ROOM</h3>
+            <p class="text-block text-block--purple">"Клуб без сна" - это о нашей фиолетовой комнате. Удобный диван, пуфы
+              и, конечно, Playstation 4, что еще нужно?</p>
+            <div class="rooms_tabs-reserve">
+              <button class="popup-btn popup-btn--purple btn" data-path="reserve" data-color="purple">Забронировать</button>
+              <div class="rooms__tabs-price">375
+                <span>грн/год</span>
+              </div>
+            </div>
+            <div class="info-block info-block--purple">до 8 чел.</div>
+          </div>
+          <div class="rooms__slider rooms__slider--purple">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/purple/1.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/purple/2.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/purple/3.jpg" alt="slider image">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div class="rooms__tabs-content-item">
+          <div class="rooms__tabs-info">
+            <h3 class="rooms__tabs-title rooms__tabs-title--yellow">YELLOW ROOM</h3>
+            <p class="text-block text-block--yellow">Самая светлая из наших комнат, к тому же очень просторная, идеально
+              подойдет для турниров, по Mortal Combat, например.</p>
+            <div class="rooms_tabs-reserve">
+              <button class="popup-btn popup-btn--yellow btn" data-path="reserve" data-color="yellow">Забронировать</button>
+              <div class="rooms__tabs-price">450
+                <span>грн/год</span>
+              </div>
+            </div>
+            <div class="info-block info-block--yellow">до 10 чел.</div>
+          </div>
+          <div class="rooms__slider rooms__slider--yellow">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/yellow/1.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/yellow/2.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/yellow/3.jpg" alt="slider image">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div class="rooms__tabs-content-item">
+          <div class="rooms__tabs-info">
+            <h3 class="rooms__tabs-title rooms__tabs-title--green">GREEN ROOM</h3>
+            <p class="text-block text-block--green">Ищешь место для вечеринки?
+              Тогда эта комната для тебя, наши гости любят устраивать дверь именно здесь.
+              Поиграть, конечно же, тоже можно!</p>
+            <div class="rooms_tabs-reserve">
+              <button class="popup-btn popup-btn--green btn" data-path="reserve" data-color="green">Забронировать</button>
+              <div class="rooms__tabs-price">450
+                <span>грн/год</span>
+              </div>
+            </div>
+            <div class="info-block info-block--green">до 10 чел.</div>
+          </div>
+          <div class="rooms__slider rooms__slider--green">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/green/1.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/green/2.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/green/3.jpg" alt="slider image">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rooms__tabs-content-box" id="tab-2">
+        <div class="rooms__tabs-content-item">
+          <div class="rooms__tabs-info">
+            <h3 class="rooms__tabs-title rooms__tabs-title--m">M ROOM</h3>
+            <p class="text-block text-block--m">Наша новая комната выполнена
+              в фирменных цветах LA GAME BAR. Если ты любишь нас и все синее – эта комната для тебя.</p>
+            <div class="rooms_tabs-reserve">
+              <button class="popup-btn popup-btn--m btn" data-path="reserve" data-color="M">Забронировать</button>
+              <div class="rooms__tabs-price">500
+                <span>грн/год</span>
+              </div>
+            </div>
+            <div class="info-block info-block--m">до 10-12 чел.</div>
+          </div>
+          <div class="rooms__slider rooms__slider--m">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/m/1.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/m/2.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/m/3.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/m/4.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/m/5.jpg" alt="slider image">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div class="rooms__tabs-content-item">
+          <div class="rooms__tabs-info">
+            <h3 class="rooms__tabs-title rooms__tabs-title--l">L ROOM</h3>
+            <p class="text-block text-block--l">Для любителей мультфильма "Корпорация монстров", и в частности Салливана -
+              Добро пожаловать.</p>
+            <div class="rooms_tabs-reserve">
+              <button class="popup-btn popup-btn--l btn" data-path="reserve" data-color="L">Забронировать</button>
+              <div class="rooms__tabs-price">700
+                <span>грн/год</span>
+              </div>
+            </div>
+            <div class="info-block info-block--l">до 15 чел.</div>
+          </div>
+          <div class="rooms__slider rooms__slider--l">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/l/1.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/l/2.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/l/3.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/l/4.jpg" alt="slider image">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div class="rooms__tabs-content-item">
+          <div class="rooms__tabs-info">
+            <h3 class="rooms__tabs-title rooms__tabs-title--xl">XL ROOM</h3>
+            <p class="text-block text-block--xl">ДВ этой комнате так много места, что там завелась акула, крупные компании
+              – вам сюда.</p>
+            <div class="rooms_tabs-reserve">
+              <button class="popup-btn popup-btn--xl btn" data-path="reserve" data-color="XL">Забронировать</button>
+              <div class="rooms__tabs-price">700
+                <span>грн/год</span>
+              </div>
+            </div>
+            <div class="info-block info-block--xl">до 15 чел.</div>
+          </div>
+          <div class="rooms__slider rooms__slider--xl">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/xl/1.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/xl/2.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/xl/3.jpg" alt="slider image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rooms__slider-item">
+                    <img src="img/slider/xl/4.jpg" alt="slider image">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div class="rooms__tabs-content-item"></div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="promo" id="promo">
+  <div class="container">
+    <div class="promo__inner">
+      <div class="promo__text">
+        <h6 class="promo__title">Акции</h6>
+        <p class="promo__descr">
+          Мы любим и ценим наших
+          посетителей, поэтому акции
+          действуют для тебя всегда.
+        </p>
+      </div>
+      <div class="promo__box">
+        <div class="promo__item promo__item--1">
+          <h6 class="promo__item-title">Живая очередь</h6>
+          <p class="promo__item-text">Оказались рядом, но забыли забронировать комнату? Для живой очереди, любая свободна
+            комната будет стоить
+            75 грн в час с одного человека.
+          </p>
+          <div class="promo__num">01</div>
+          <img class="promo__img" src="img/promo/black.png" alt="">
+        </div>
+        <div class="promo__item promo__item--2">
+          <h6 class="promo__item-title">Имениннику</h6>
+          <p class="promo__item-text">Дарим 10% скидки в аренду комнаты. Так что с местом на день рождения Вы
+            определились.
+          </p>
+          <div class="promo__num">02</div>
+          <img class="promo__img" src="img/promo/white.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <section class="games" id="games">
+  <div class="container">
+    <h2 class="games__title title">Наши консольные игры</h2>
+    <div class="games__box">
+      <div class="games__img">
+        <img src="img/games/1.jpg" alt="games">
+      </div>
+      <div class="games__descr">
+        <h6 class="games__descr-title">Игры на Ваш вкус</h6>
+        <p class="games__descr-text">
+          Здесь ты сможешь поиграть в новинки индустрии, если увидел только вышедшую игру, то знай – она уже у нас.
+        </p>
+        <a class="btn" href="#rooms" data-path="reserve">Забронировать</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="games games--table">
+  <div class="container">
+    <h2 class="games__title title">Настольные игры</h2>
+    <div class="games__box">
+      <div class="games__img">
+        <img src="img/games/2.jpg" alt="games">
+      </div>
+      <div class="games__descr">
+        <h6 class="games__descr-title">Джойстик не потребуется</h6>
+        <p class="games__descr-text">
+          Также у нас большой выбор настольных игр для компаний, скучать тебе точно не придется.
+        </p>
+        <a class="btn" href="#rooms" data-path="reserve">Забронировать</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="benefits" id="benefits">
+  <div class="container">
+    <h2 class="benefits__title title">Почему мы?</h2>
+    <div class="benefits__body">
+      <div class="benefits__item">
+        <div class="benefits__item-name">Атмосфера</div>
+        <p class="benefits__text">
+          Приходя к нам, тебя обслуживают как старого друга, которого давно не видели, или приятеля, часто заходящего в гости.
+        </p>
+        <img class="benefits__img" src="img/benefits/1.png" alt="heart">
+      </div>
+      <div class="benefits__item">
+        <div class="benefits__item-name">Кальян</div>
+        <p class="benefits__text">
+          Большой ассортимент вкусов только популярных производителей. Топовые станции Embery, Kaya, Karma. А также люди, которые любят готовить много дыма.
+        </p>
+        <img class="benefits__img benefits__img--smoke" src="img/benefits/2.png" alt="smoke">
+      </div>
+      <div class="benefits__item">
+        <div class="benefits__item-name">Лояльные цены</div>
+        <p class="benefits__text">
+          Приходи и убедись, что у нас одни из самых доступных цен на меню, а также возможность отдохнуть в узком кругу по тарифу живой очереди.
+        </p>
+        <img class="benefits__img" src="img/benefits/3.png" alt="price">
+      </div>
+    </div>
+  </div>
+</section>
+      <div class="feedback">
+  <div class="container">
+    <h2 class="feedback__title title">Отзывы</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="feedback__item">
+            <p class="feedback__text">
+              Лучшая атмосфера по сравнению с другими похжими местами. Всегда приятный и понимающий персоналбготов
+              помочь
+              и ответить на любые вопросы. Удобное расположение, большой ассортимнт табаков, рекомендую всем друзьям к
+              посещению!
+            </p>
+            <img class="avatar" src="img/feedback/ava.png" alt="user">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="feedback__item">
+            <p class="feedback__text">
+              Лучшая атмосфера по сравнению с другими похжими местами. Всегда приятный и понимающий персоналбготов
+              помочь
+              и ответить на любые вопросы. Удобное расположение, большой ассортимнт табаков, рекомендую всем друзьям к
+              посещению!
+            </p>
+            <img class="avatar" src="img/feedback/ava.png" alt="user">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="feedback__item">
+            <p class="feedback__text">
+              Лучшая атмосфера по сравнению с другими похжими местами. Всегда приятный и понимающий персоналбготов
+              помочь
+              и ответить на любые вопросы. Удобное расположение, большой ассортимнт табаков, рекомендую всем друзьям к
+              посещению!
+            </p>
+            <img class="avatar" src="img/feedback/ava.png" alt="user">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="feedback__item">
+            <p class="feedback__text">
+              Лучшая атмосфера по сравнению с другими похжими местами. Всегда приятный и понимающий персоналбготов
+              помочь
+              и ответить на любые вопросы. Удобное расположение, большой ассортимнт табаков, рекомендую всем друзьям к
+              посещению!
+            </p>
+            <img class="avatar" src="img/feedback/ava.png" alt="user">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="feedback__item">
+            <p class="feedback__text">
+              Лучшая атмосфера по сравнению с другими похжими местами. Всегда приятный и понимающий персоналбготов
+              помочь
+              и ответить на любые вопросы. Удобное расположение, большой ассортимнт табаков, рекомендую всем друзьям к
+              посещению!
+            </p>
+            <img class="avatar" src="img/feedback/ava.png" alt="user">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="feedback__item">
+            <p class="feedback__text">
+              Лучшая атмосфера по сравнению с другими похжими местами. Всегда приятный и понимающий персоналбготов
+              помочь
+              и ответить на любые вопросы. Удобное расположение, большой ассортимнт табаков, рекомендую всем друзьям к
+              посещению!
+            </p>
+            <img class="avatar" src="img/feedback/ava.png" alt="user">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+</div>
+      <section class="contacts" id="contacts">
+  <div class="container">
+    <h2 class="contacts__title title">Контакты</h2>
+    <div class="contacts__box">
+      <div class="contacts__item contacts__item--telegram">
+        <p class="contacts__item-text">
+          Остались вопросы? Напиши нам в телеграмм.
+        </p>
+        <a href="https://web.telegram.org/k/#/im?p=%40LAgamebar" class="contacts__link contacts__link--telegram"
+          target="_blank">Написать</a>
+      </div>
+      <div class="contacts__item contacts__item--inst">
+        <p class="contacts__item-text">
+          Подписывайся
+          на наш инстаграмм.
+        </p>
+        <a href="https://instagram.com/la.gamebar?igshid=h0v0j0teelhh" class="contacts__link contacts__link--inst"
+          target="_blank">Открыть</a>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="email">
+        <a href="mailto:lagamebar@gmail.com">lagamebar@gmail.com</a>
+      </div>
+      <div class="phone">
+        <a href="tel:0734341216">073 434 12 16</a>
+        <a href="tel:0734341216">095 627 89 82</a>
+      </div>
+      <div class="shedule"><span>ПН - НД</span> с 12:00 до 21:00</div>
+      <div class="adress">
+        <a href="https://goo.gl/maps/hXDTW1cyFkQvvnxu5" target="_blank">Киев, Большая Васильковская, 42Б</a>
+        <a href="https://goo.gl/maps/qrntzmqSRj3HD3n86" target="_blank">Киев, Пушкинская, 11</a>
+      </div>
+    </div>
+  </div>
+</footer>
+    <div class="modals">
+  <div class="modal-overlay">
+    <div class="modal-wrap">
+      <div class="modal modal-menu" data-target="menu">
+        <img class="menu-img" src="img/menu.jpg" alt="menu">
+        <button class="close-icon">
+          <img src="img/icons/close-icon.svg" alt="close icon">
+        </button>
+      </div>
+      <div class="modal modal-reserve" data-target="reserve">
+        <button class="close-icon">
+          <img src="img/icons/close-icon.svg" alt="close icon">
+        </button>
+        <h6 class="modal-reserve__title">Вы забронировали комнату <span class="room-color"></span></h6>
+        <p class="modal-reserve__subtitle">Заполните свои данные и мы свяжкмся с Вами!</p>
+        <form action="#" class="modal-reserve__form">
+          <div class="modal-reserve__form-item">
+            <input class="modal-reserve__input modal-reserve__input--name" type="text" placeholder="Ваше имя">
+          </div>
+          <div class="modal-reserve__form-item">
+            <input class="modal-reserve__input modal-reserve__input--phone" type="tel" placeholder="Ваш номер телефона">
+          </div>
+          <button class="modal-reserve__btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="js/app.min.js?_v=20230701124540"></script>
+  </div>
+</body>
+
+</html>

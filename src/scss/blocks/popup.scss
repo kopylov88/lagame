@@ -1,0 +1,136 @@
+.modal-overlay {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  overflow: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+.modal {
+  width: 100%;
+  display: none;
+}
+
+.modal--visible {
+  display: block;
+}
+
+.modal-menu {
+  position: relative;
+  max-width: 700px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.modal-reserve {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+
+  &__title {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 28px;
+    text-shadow: 0px 1px #fff;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  &__form-item {
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  &__btn {
+    max-width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    transition: .3s;
+    @media(any-hover: hover) {
+      &:hover {
+        box-shadow: 0 0 15px 5px #000;
+      }
+    }
+  }
+
+  &.modal--miami {
+    background-color: rgba(#ff6b00, .5);
+  }
+  &.modal--red {
+    background-color: rgba(#ff0000, .5);
+  }
+  &.modal--purple {
+    background-color: rgba(#6f05a8, .5);
+  }
+  &.modal--yellow {
+    background-color: rgba(#fbff00, .5);
+  }
+  &.modal--green {
+    background-color: rgba(#00DC7D, .5);
+  }
+  &.modal--M {
+    background-color: rgba($accent-color, .5);
+  }
+  &.modal--L {
+    background-color: rgba(#4f85cf, .5);
+  }
+  &.modal--XL {
+    background-color: rgba(#1ec9e8, .5);
+  }
+
+}
