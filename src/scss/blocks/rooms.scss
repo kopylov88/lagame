@@ -107,7 +107,6 @@
 
   &__slider {
     max-width: 600px;
-
     .swiper-horizontal>.swiper-pagination-bullets,
     .swiper-pagination-bullets.swiper-pagination-horizontal,
     .swiper-pagination-custom,
@@ -184,6 +183,7 @@
   &__slider-item {
     img {
       border-radius: 10px;
+      width: 100%;
     }
 
   }

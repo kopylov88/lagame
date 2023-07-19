@@ -10,6 +10,7 @@ body {
   font-weight: 400;
   color: #fff;
   background-color: #202020;
+
   &::after {
     content: '';
     position: absolute;
@@ -24,6 +25,7 @@ body {
 
   &.noscroll {
     overflow: hidden;
+
     &::after {
       display: block;
     }
@@ -102,7 +104,7 @@ body {
   flex-direction: column;
   position: relative;
   padding-left: 60px;
-  
+
 
   &::before {
     content: '';
@@ -120,12 +122,15 @@ body {
 .phone::before {
   background-image: url('@img/icons/phone.svg');
 }
+
 .shedule::before {
   background-image: url('@img/icons/time.svg');
 }
+
 .adress::before {
   background-image: url('@img/icons/marker.svg');
 }
+
 .email::before {
   background-image: url('@img/icons/email.svg');
   top: -5px;
@@ -191,6 +196,7 @@ body {
   background-color: #111;
   transition: .3s;
   transform: translateX(100%);
+
   &.open {
     transform: translateX(0);
   }
@@ -209,9 +215,17 @@ body {
   }
 
   &__item {
-    &+.side-menu__item {
-      margin-top: 20px;
+    transition: .3s;
+
+    @media(any-hover: hover) {
+      &:hover {
+        padding-left: 20px;
+      }
     }
+  }
+
+  &__item+&__item {
+    margin-top: 20px;
   }
 
   &__link {
