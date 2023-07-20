@@ -336,8 +336,10 @@ body.noscroll::after {
 .side-menu__box {
   display: flex;
   flex-direction: column;
+  gap: 30px;
   height: 100%;
   padding: 30px;
+  overflow: auto;
 }
 
 .side-menu__item {
@@ -636,9 +638,6 @@ textarea:focus:-ms-input-placeholder {
 
 .hero__img {
   max-width: 600px;
-  animation-name: scale;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
 }
 
 .hero__img img {
@@ -663,20 +662,6 @@ textarea:focus:-ms-input-placeholder {
   text-transform: uppercase;
   font-weight: 600;
   transition: 0.3s;
-}
-
-@keyframes scale {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
 }
 
 .service {

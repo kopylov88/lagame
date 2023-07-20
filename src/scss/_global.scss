@@ -210,8 +210,10 @@ body {
   &__box {
     display: flex;
     flex-direction: column;
+    gap: 30px;
     height: 100%;
     padding: 30px;
+    overflow: auto;
   }
 
   &__item {
