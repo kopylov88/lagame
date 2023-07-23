@@ -3,6 +3,7 @@ import { useDynamicAdapt } from './modules/dynamicAdapt.js';
 import Swiper from 'swiper/bundle';
 import Inputmask from 'inputmask';
 import JustValidate from 'just-validate';
+import AOS from 'aos';
 
 myFunctions.isWebp();
 myFunctions.isTouch();
@@ -180,4 +181,8 @@ validator
       el.classList.remove(...[...el.classList].filter(n => n.indexOf('modal--') !== -1))
     })
   });
+
+AOS.init({
+  disable: 'mobile',
+});
 

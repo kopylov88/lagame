@@ -2,6 +2,8 @@
 
 @import '../../node_modules/swiper/swiper-bundle.min.css';
 
+@import '../../node_modules/aos/dist/aos.css';
+
 * {
   padding: 0px;
   margin: 0px;
@@ -687,10 +689,6 @@ textarea:focus:-ms-input-placeholder {
   border-radius: 10px;
 }
 
-.service__item:hover::before {
-  transform: rotate(5deg);
-}
-
 .service__item::before {
   content: "";
   position: absolute;
@@ -699,9 +697,9 @@ textarea:focus:-ms-input-placeholder {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #1771f1;
+  background-color: transparent;
   border-radius: 10px;
-  transition: 0.6s;
+  transition: transform 0.6s;
 }
 
 .service__item-name {
@@ -766,6 +764,7 @@ textarea:focus:-ms-input-placeholder {
   font-weight: 400;
   width: 50%;
   padding-bottom: 20px;
+  transition: 0.3s;
 }
 
 .rooms__tabs-btn.active {
@@ -1359,10 +1358,6 @@ textarea:focus:-ms-input-placeholder {
   border-radius: 10px;
 }
 
-.benefits__item:hover::before {
-  transform: rotate(5deg);
-}
-
 .benefits__item::before {
   content: "";
   position: absolute;
@@ -1371,9 +1366,9 @@ textarea:focus:-ms-input-placeholder {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #1771f1;
+  background-color: transparent;
   border-radius: 10px;
-  transition: 0.6s;
+  transition: transform 0.6s;
 }
 
 .benefits__item-name {
@@ -1860,8 +1855,18 @@ textarea:focus:-ms-input-placeholder {
     background-color: #093e88;
   }
 
+  .service__item:hover::before {
+    transform: rotate(5deg);
+    background-color: #1771f1;
+  }
+
   .modal-reserve__btn:hover {
     box-shadow: 0 0 15px 5px #000;
+  }
+
+  .benefits__item:hover::before {
+    transform: rotate(5deg);
+    background-color: #1771f1;
   }
 }
 

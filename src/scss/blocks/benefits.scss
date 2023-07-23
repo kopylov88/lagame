@@ -18,9 +18,12 @@
     background-color: #303030;
     border-radius: 10px;
 
-    &:hover {
-      &::before {
-        transform: rotate(5deg);
+    @media(any-hover:hover) {
+      &:hover {
+        &::before {
+          transform: rotate(5deg);
+          background-color: $accent-color;
+        }
       }
     }
 
@@ -32,9 +35,9 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: $accent-color;
+      background-color: transparent;
       border-radius: 10px;
-      transition: .6s;
+      transition: transform .6s;
     }
   }
 
@@ -56,5 +59,4 @@
       top: -115px;
     }
   }
-
 }
