@@ -32,9 +32,12 @@
     "inputmask": "^5.0.8",
     "just-validate": "^4.2.0",
     "sass": "^1.55.0",
+    "swiper": "^9.3.2",
     "webp-converter": "2.2.3",
     "webpack": "^5.74.0",
     "webpack-stream": "^7.0.0",
-    "swiper": "^9.3.2"
+    "typed.js": "^2.0.16"
+  },
+  "dependencies": {
   }
 }

@@ -4,6 +4,7 @@ import Swiper from 'swiper/bundle';
 import Inputmask from 'inputmask';
 import JustValidate from 'just-validate';
 import AOS from 'aos';
+import Typed from 'typed.js';
 
 myFunctions.isWebp();
 myFunctions.isTouch();
@@ -186,3 +187,13 @@ AOS.init({
   disable: 'mobile',
 });
 
+const typedText = document.querySelector('.hero__title').textContent;
+
+const typed = new Typed('#typed', {
+  stringsElement: '#typed-strings',
+  typeSpeed: 50,
+  showCursor: false,
+});
+
+
+console.log(typedText);

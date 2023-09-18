@@ -14,9 +14,6 @@
   &__item {
     position: relative;
     max-width: 360px;
-    padding: 70px 20px 20px;
-    background-color: #303030;
-    border-radius: 10px;
 
     @media(any-hover:hover) {
       &:hover {
@@ -39,6 +36,13 @@
       border-radius: 10px;
       transition: transform .6s;
     }
+  }
+
+  &__item-content {
+    padding: 70px 20px 20px;
+    background-color: #303030;
+    border-radius: 10px;
+    height: 100%;
   }
 
   &__item-name {

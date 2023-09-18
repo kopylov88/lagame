@@ -15,15 +15,14 @@
     position: relative;
     max-width: 360px;
     width: 100%;
-    padding: 20px;
-    background-color: #303030;
-    border-radius: 10px;
+    
+    
+    
 
     @media(any-hover: hover) {
       &:hover {
         &::before {
           transform: rotate(5deg);
-          background-color: $accent-color;
         }
       }
     }
@@ -36,10 +35,17 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: transparent;
+      background-color: $accent-color;
       border-radius: 10px;
       transition: transform .6s;
     }
+  }
+
+  &__item-content {
+    padding: 20px;
+    background-color: #303030;
+    border-radius: 10px;
+    height: 100%;
   }
 
   &__item-name {
