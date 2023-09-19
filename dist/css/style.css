@@ -612,6 +612,10 @@ textarea:focus:-ms-input-placeholder {
   font-weight: 700;
 }
 
+.hero__title p {
+  display: none;
+}
+
 .hero__box {
   display: flex;
   flex-direction: column;
@@ -1669,7 +1673,10 @@ textarea:focus:-ms-input-placeholder {
 
   .service__item {
     max-width: 100%;
-    padding-right: 100px;
+  }
+
+  .service__text {
+    max-width: 70%;
   }
 
   .service__img {
@@ -1703,6 +1710,10 @@ textarea:focus:-ms-input-placeholder {
 
   .promo__item {
     max-width: 100%;
+  }
+
+  .promo__item-text {
+    max-width: 70%;
   }
 
   .games__box {

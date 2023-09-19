@@ -120,7 +120,10 @@
 
   .service__item {
     max-width: 100%;
-    padding-right: 100px;
+  }
+
+  .service__text {
+    max-width: 70%;
   }
 
   .service__img {
@@ -154,6 +157,10 @@
 
   .promo__item {
     max-width: 100%;
+  }
+
+  .promo__item-text {
+    max-width: 70%;
   }
 
   .games__box {

@@ -187,8 +187,6 @@ AOS.init({
   disable: 'mobile',
 });
 
-const typedText = document.querySelector('.hero__title').textContent;
-
 const typed = new Typed('#typed', {
   stringsElement: '#typed-strings',
   typeSpeed: 50,
@@ -196,4 +194,4 @@ const typed = new Typed('#typed', {
 });
 
 
-console.log(typedText);
+
