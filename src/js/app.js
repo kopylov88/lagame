@@ -184,7 +184,7 @@ validator
   });
 
 AOS.init({
-  disable: 'mobile',
+  disable: 'phone',
 });
 
 const typed = new Typed('#typed', {
