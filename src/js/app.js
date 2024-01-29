@@ -52,16 +52,20 @@ tabBtns.forEach(function (item) {
   item.addEventListener('click', function () {
     let tabId = item.getAttribute('data-tab');
     let currentContent = document.querySelector(tabId);
-    tabBtns.forEach(function (item) {
-      item.classList.remove('active');
-    });
-    item.classList.add('active');
-    tabItems.forEach(function (el) {
-      el.classList.remove('active');
-    });
-    currentContent.classList.add('active');
+    if(!item.classList.contains('active')) {
+      tabBtns.forEach(function (item) {
+        item.classList.remove('active');
+      });
+      item.classList.add('active');
+      tabItems.forEach(function (el) {
+        el.classList.remove('active');
+      });
+      currentContent.classList.add('active');
+    }
   });
 });
+
+document.querySelector('.rooms__tabs-btn').click();
 
 const feedbackSlider = new Swiper('.feedback .swiper', {
   slidesPerView: 1,

@@ -145,7 +145,9 @@ body::after {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s;
 }
 
 body.noscroll {
@@ -153,7 +155,8 @@ body.noscroll {
 }
 
 body.noscroll::after {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .wrapper {
