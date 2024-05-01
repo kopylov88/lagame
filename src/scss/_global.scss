@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -15,10 +16,7 @@ body {
     content: '';
     position: absolute;
     z-index: 500;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     background-color: rgba(#000, .8);
     opacity: 0;
     visibility: hidden;
@@ -27,6 +25,7 @@ body {
 
   &.noscroll {
     overflow: hidden;
+    background-color: #111;
 
     &::after {
       opacity: 1;
@@ -207,7 +206,7 @@ body {
   &__close {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 30px;
   }
 
   &__box {
